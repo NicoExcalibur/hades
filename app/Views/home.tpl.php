@@ -20,10 +20,15 @@
         </div>
         
         <div class="items">
-            <?php foreach ($viewData[''] as $item) : ?>
-                <tr>
-                    <li></li>
-                </tr>
+            <?php foreach ($viewData['itemList'] as $item) : ?>
+                <li>
+                    <div class="character-card">
+                        <img src="<?= $item->getPicture() ?>" alt="Image de <?= $item->getName() ?>">
+                    </div>
+                    <div class="character-name">
+                        <?= $item->getName() ?>
+                    </div>
+                </li>
             <?php endforeach; ?>
         </div>
     </div> 

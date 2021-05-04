@@ -8,13 +8,18 @@ class MainController extends CoreController{
      */
     public function home() {
 
-         // retrieve all teams from Eastern conf.
-         $characterModel = new Character();
-         $characterList = $characterModel->findAllCharacters(); // array of objects
+        // retrieve all characters
+        $characterModel = new Character();
+        $characterList = $characterModel->findAllCharacters(); // array of objects
+
+        // retrieve all Items
+        $itemModel = new Item();
+        $itemList = $itemModel->findAllItems(); // array of objects
 
         // Send the datas to the view
         $this->show('home', [
-            'characterList' => $characterList
+            'characterList' => $characterList,
+            'itemList'      => $itemList
         ]);
     }
 }
