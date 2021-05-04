@@ -3,13 +3,15 @@
     <div class="intro">
     INTRO
     </div>
-    <div class="">
+    <div class="main">
         <div class="character">
-            <ul>
+            <ul  class="character-list">
             <?php foreach ($viewData['characterList'] as $character) : ?>
                 <li>
-                    <div>
-                        <img src="<?= $character->getPicture() ?>" alt="Image de <?= $character->getName() ?>" style="height: 200px; ">
+                    <div class="character-card">
+                        <img src="<?= $character->getPicture() ?>" alt="Image de <?= $character->getName() ?>">
+                    </div>
+                    <div class="character-name">
                         <?= $character->getName() ?>
                     </div>
                 </li>
