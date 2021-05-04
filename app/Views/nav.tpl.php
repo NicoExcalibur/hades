@@ -7,10 +7,10 @@
                 <a href="<?= $router->generate('homepage'); ?>" class="nav-link ">Home</a>
             </li>
             <li class="nav-item">
-                <a href="<?= $router->generate('player-list'); ?>" class="nav-link">Joueurs</a>
+                <a href="<?= $router->generate('player-list'); ?>" class="nav-link">Personnages</a>
             </li>
             <li class="nav-item">
-                <a href="<?= $router->generate('ranking'); ?>" class="nav-link">Classements</a>
+                <a href="<?= $router->generate('ranking'); ?>" class="nav-link">Objets</a>
             </li>
         </ul>
     </div>
