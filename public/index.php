@@ -11,8 +11,8 @@ require __DIR__ . '/../app/Controllers/TeamController.php';
 
 // include my Models
 require __DIR__ . '/../app/Models/CoreModel.php';
-require __DIR__ . '/../app/Models/Team.php';
-require __DIR__ . '/../app/Models/Player.php';
+require __DIR__ . '/../app/Models/Item.php';
+require __DIR__ . '/../app/Models/Character.php';
 
 // define the base path
 $router = new AltoRouter;

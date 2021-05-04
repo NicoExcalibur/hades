@@ -8,5 +8,3 @@ WIP
 - Composer
 
 ## Screenshots
-
-# hades
