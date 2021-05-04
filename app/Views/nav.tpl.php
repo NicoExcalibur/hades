@@ -1,16 +1,16 @@
 <nav>
-    <div class="logo">NBA DB</div>
+    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/fr/c/c0/Hades_Logo.png" alt="Logo Hades"></div>
 
     <div class="nav-links">
         <ul class="navbar-list">
             <li class="nav-item">
-                <a href="<?= $router->generate('homepage'); ?>" class="nav-link ">Home</a>
+                <a href="#" class="nav-link ">Home</a>
             </li>
             <li class="nav-item">
-                <a href="<?= $router->generate('player-list'); ?>" class="nav-link">Personnages</a>
+                <a href="#" class="nav-link">Personnages</a>
             </li>
             <li class="nav-item">
-                <a href="<?= $router->generate('ranking'); ?>" class="nav-link">Objets</a>
+                <a href="#" class="nav-link">Objets</a>
             </li>
         </ul>
     </div>

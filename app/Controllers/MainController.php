@@ -8,18 +8,13 @@ class MainController extends CoreController{
      */
     public function home() {
 
-        // // retrieve all teams from Eastern conf.
-        // $eastTeamModel = new Team();
-        // $eastTeamList = $eastTeamModel->findAllEast(); // array of objects
+         // retrieve all teams from Eastern conf.
+         $characterModel = new Character();
+         $characterList = $characterModel->findAllCharacters(); // array of objects
 
-        // // retrieve all teams from Western conf.
-        // $westTeamModel = new Team();
-        // $westTeamList = $westTeamModel->findAllWest(); // array of objects
-
-        // // Send the datas to the view
-        // $this->show('home', [
-        //     'eastTeamList'   => $eastTeamList,
-        //     'westTeamList'   => $westTeamList
-        // ]);
+        // Send the datas to the view
+        $this->show('home', [
+            'characterList' => $characterList
+        ]);
     }
 }
