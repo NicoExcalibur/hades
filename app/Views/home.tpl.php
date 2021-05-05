@@ -12,7 +12,7 @@
                         <img src="<?= $character->getPicture() ?>" alt="Image de <?= $character->getName() ?>">
                     </div>
                     <div class="character-name">
-                        <?= $character->getName() ?>
+                        <a href="#"><?= $character->getName() ?></a>
                     </div>
                 </li>
                 <?php endforeach; ?>
