@@ -61,7 +61,7 @@ class Item extends CoreModel{
         $sql = "SELECT *
             FROM `items` 
             ORDER BY `items`.`name` ASC
-            LIMIT 6 
+            LIMIT 9
             ";
         // execute the query and set the result as a PDOStatement object
         $pdoStatement = $pdo->query($sql);

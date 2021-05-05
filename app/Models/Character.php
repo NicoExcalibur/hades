@@ -21,7 +21,7 @@ class Character extends CoreModel{
         $sql = "SELECT *
             FROM `characters` 
             ORDER BY `characters`.`name` ASC
-            LIMIT 6 
+            LIMIT 9
             ";
         // execute the query and set the result as a PDOStatement object
         $pdoStatement = $pdo->query($sql);
