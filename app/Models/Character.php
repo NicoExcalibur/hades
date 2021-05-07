@@ -6,7 +6,6 @@ class Character extends CoreModel{
     private $title;
     private $affiliation_id;
 
-    
     /**
      * Retrieve all players by name in alphabetical order
      *
@@ -40,16 +39,16 @@ class Character extends CoreModel{
     public function find($id)
     {
         // SQL query
-        $pdo = new PDO('mysql:host=localhost;dbname=nba', 'Nico', 'Ereul9Aeng');
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
         
-        $sql = "SELECT * FROM player 
+        $sql = "SELECT * FROM character 
             WHERE id = {$id};";
         
         // execute the query and set the result as a PDOStatement object
         $pdoStatement = $pdo->query($sql);
 
         // get result as a new instance and send it
-        $onePlayer = $pdoStatement->fetchObject('Player');
+        $onePlayer = $pdoStatement->fetchObject('Character');
 
         return $onePlayer;
     }

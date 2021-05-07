@@ -19,7 +19,7 @@ class MainController extends CoreController{
         // Send the datas to the view
         $this->show('home', [
             'characterList' => $characterList,
-            'itemList'      => $itemList
+            'itemList'      => $itemList 
         ]);
     }
 }

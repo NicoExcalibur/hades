@@ -5,8 +5,6 @@ class Item extends CoreModel{
     private $picture;
     private $category_id;
 
-    
-
     /**
      * Get the value of picture
      */ 

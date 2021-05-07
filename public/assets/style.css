@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 table,
 td {
     border: 1px solid #333;
@@ -115,6 +119,10 @@ footer {
     width: 150px;
 }
 
+.character-name a, .item-name a {
+    color: black;
+}
+
 .main {
     display: flex;
     justify-content: space-around;
@@ -151,4 +159,9 @@ footer {
     background-color: rgb(182, 0, 0);
     padding: 1em;
     border-radius: 5px;
+}
+
+.intro {
+    padding: 2em;
+    display: flex;
 }
