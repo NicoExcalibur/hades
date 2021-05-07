@@ -165,3 +165,7 @@ footer {
     padding: 2em;
     display: flex;
 }
+
+.select-boon {
+    margin: 1em;
+}

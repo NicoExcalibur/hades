@@ -131,4 +131,154 @@ class Boon extends CoreModel {
 
         return $boons;
     }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllStrikes()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'strike'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllTechnicals()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'technical'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllShoots()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'shoot'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllDashes()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'dash'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllAids()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'aid'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
+
+    /**
+     * Retrieve all players by name in alphabetical order
+     *
+     * @return  array
+     */  
+    public function findAllPassives()
+    {
+        // connects to DB
+        $pdo = new PDO('mysql:host=localhost;dbname=hades', 'Nico', 'Ereul9Aeng');
+
+        // SQL query
+        $sql = "SELECT *
+            FROM `boons` 
+            WHERE `boons`.`type` = 'passive'
+            ORDER BY `boons`.`name` ASC
+            ";
+        // execute the query and set the result as a PDOStatement object
+        $pdoStatement = $pdo->query($sql);
+
+        // get results in an array and send them
+        $boons = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Boon');
+
+        return $boons;
+    }
 }

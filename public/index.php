@@ -44,7 +44,7 @@ $router->map(
     'GET',
     '/simulator',
     [
-        'method' => 'allBoons',
+        'method' => 'simulator',
         'controller' => 'SimuController'
     ],
     'simulator'
