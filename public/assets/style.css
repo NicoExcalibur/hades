@@ -169,3 +169,7 @@ footer {
 .select-boon {
     margin: 1em;
 }
+
+.passives {
+    background-color: chartreuse;
+}
